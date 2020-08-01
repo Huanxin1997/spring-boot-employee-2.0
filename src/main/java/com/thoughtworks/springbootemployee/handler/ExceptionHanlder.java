@@ -13,13 +13,13 @@ public class ExceptionHanlder {
     @ResponseBody
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public String notFound() {
-        return "";
+        return "no resource";
     }
     @ExceptionHandler(IllegalAccessError.class)
     @ResponseBody
     @ResponseStatus(HttpStatus.FORBIDDEN)
     public String illegalOperate() {
-        return "";
+        return "you can't do that";
     }
 
 }

@@ -9,6 +9,5 @@ spring:
   h2:
     console:
       enabled: true
-
   flyway:
-    locations: classpath:db/migration
+    location: classpath:db/migration
